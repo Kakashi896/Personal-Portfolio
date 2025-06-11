@@ -2,7 +2,7 @@ import React from 'react';
 import { RiProjectorFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import Newsly from '../assets/Newsly.png';
-import Arogyam from '../assets/Arogyam.png';
+import Mindspace from '../assets/Mindspace.png';
 import Notemints from '../assets/Notemints.png';
 import Portfolio from '../assets/port.png';
 
@@ -29,11 +29,11 @@ const projects = [
     link: "#",
   },
   {
-    title: "Arogyam UI",
-    image: Arogyam,
-    description: "Mental health wellness platform featuring soothing UI/UX design, meditation guides, and mood tracking.",
-    tech: ["UI Design", "Responsive"],
-    link: "https://arogyam-ui.netlify.app",
+    title: "MindSpace with Mood Tracker",
+    image: Mindspace,
+    description: "Mental health wellness platform featuring soothing UI/UX design, and mood tracking.",
+    tech: ["UI Design", "Responsive", "Mood Tracking"],
+    link: "https://mindspace2.netlify.app/",
   },
 ];
 

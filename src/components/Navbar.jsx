@@ -14,7 +14,7 @@ const Navbar = () => {
               Quick nav <IoIosArrowRoundForward />
             </p>
 
-            <div className="flex flex-wrap justify-center sm:justify-start mt-5 gap-3">
+            <div className="flex flex-wrap justify-center sm:justify-start mt-5 gap-x-3 gap-y-2">
               {navItems.map((item, index) => (
                 <Link
                   key={index}
