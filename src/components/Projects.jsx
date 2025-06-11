@@ -4,10 +4,9 @@ import { FaGithub } from "react-icons/fa";
 import Newsly from '../assets/Newsly.png';
 import Arogyam from '../assets/Arogyam.png';
 import Notemints from '../assets/Notemints.png';
-import Portfolio from '../assets/Portfolio.png';
+import Portfolio from '../assets/Port.png';
 
 const projects = [
-  
   {
     title: "NoteMints",
     image: Notemints,
@@ -20,7 +19,7 @@ const projects = [
     image: Newsly,
     description: "A modern tech news aggregator fetching data from RESTful APIs with real-time updates and personalized feeds.",
     tech: ["React", "API Integration", "Tailwind CSS"],
-    link: "http://newsly-daily-news.netlify.app/",
+    link: "https://newslyyyy.netlify.app/",
   },
   {
     title: "Portfolio",
@@ -40,39 +39,43 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen px-6 py-14">
+    <section id="projects" className="min-h-screen px-4 sm:px-6 py-10 sm:py-14">
       {/* Title */}
-      <div className="flex items-center gap-3 mb-10">
-        <RiProjectorFill className="text-5xl text-blue-500" />
-        <h1 className="text-4xl sm:text-5xl font-bold text-blue-500">My Projects</h1>
-        <div className='flex-grow h-[1px] bg-blue-500 mt-2 ml-4 rounded-full'></div>
+      <div className="flex flex-wrap items-center gap-3 mb-10">
+        <RiProjectorFill className="text-4xl sm:text-5xl text-blue-500" />
+        <h1 className="text-3xl sm:text-4xl md:text-5xl  bg-clip-text text-transparent bg-zinc-900">My Projects</h1>
+        <div className="flex-grow h-[1px] bg-blue-500 mt-2 ml-0 sm:ml-4 rounded-full"></div>
       </div>
 
       {/* Project Cards Grid */}
-      <div className="grid md:grid-cols-2 gap-12 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
         {projects.map((proj, idx) => (
-          <div key={idx} className="relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all overflow-hidden">
+          <div key={idx} className="relative bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
             {/* Image Section */}
             <div className="relative">
-              <img src={proj.image} alt={proj.title} className="w-full h-[380px] object-cover transition-all duration-300" />
+              <img 
+                src={proj.image} 
+                alt={proj.title} 
+                className="w-full h-52 sm:h-64 md:h-90 object-cover transition-all duration-300" 
+              />
               <a 
-                href={proj.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="absolute inset-0 bg-zinc-800/75 flex justify-center items-center text-white text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity"
+                href={proj.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 bg-zinc-900/70 flex justify-center items-center text-white text-base font-semibold opacity-0 hover:opacity-100 transition-opacity"
               >
-                Visit {proj.title} 
+                Visit {proj.title}
               </a>
             </div>
-            
+
             {/* Card Content */}
-            <div className="p-5 space-y-4">
-              <p className="text-gray-600 text-sm">{proj.description}</p>
+            <div className="p-4 sm:p-5 space-y-3">
+              <p className="text-gray-600 text-sm sm:text-base">{proj.description}</p>
               <div className="flex flex-wrap gap-2">
                 {proj.tech.map((tag, i) => (
                   <span
                     key={i}
-                    className="bg-blue-500 text-gray-100 text-xs font-medium px-2.5 py-1 rounded-full border border-gray-200"
+                    className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full"
                   >
                     {tag}
                   </span>
@@ -85,12 +88,12 @@ const Projects = () => {
 
       {/* Bottom CTA */}
       <div className="mt-12 text-center">
-        <p className="text-gray-700 font-medium mb-4">Want to see more?</p>
+        <p className="text-gray-700 font-medium mb-3 text-sm sm:text-base">Want to see more?</p>
         <a
           href="https://github.com/Kakashi896"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition"
+          className="inline-block px-5 py-2.5 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition"
         >
           Visit My GitHub
         </a>

@@ -34,7 +34,7 @@ const Contact = () => {
 
 <div className="flex items-center gap-3 mb-10">
 <MdContactPage className="text-4xl sm:text-5xl mt-2 text-blue-500" />
-        <h1 className="text-4xl sm:text-5xl font-bold text-blue-500">Contact</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl  bg-clip-text text-transparent bg-zinc-900">Contact</h1>
         <div className='flex-grow h-[1px] bg-blue-500 mt-2 ml-4 rounded-full'></div>
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">

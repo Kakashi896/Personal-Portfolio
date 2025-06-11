@@ -190,7 +190,7 @@ const About = () => {
           ))}
 
           {/* Tech Stack Surprise */}
-          <motion.div 
+          {/* <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -214,6 +214,24 @@ const About = () => {
                   <span className="mt-2 text-xs font-medium text-gray-600">{tech.name}</span>
                 </motion.div>
               ))}
+            </div>
+          </motion.div> */}
+          <motion.div variants={messageVariants} className='flex justify-end'>
+            <div className='flex items-start max-w-[90%] sm:max-w-[80%]'>
+              <motion.p 
+                whileHover={{ scale: 1.02 }}
+                className='bg-gradient-to-r from-blue-500 to-blue-600 max-w-full shadow-lg shadow-blue-200 font-medium text-white p-4 rounded-3xl rounded-tr-none'
+              >
+                {sender[3]}
+              </motion.p>
+              <motion.div 
+                variants={iconVariants}
+                whileHover="hover"
+                whileTap="tap"
+                className='bg-white p-2 rounded-full shadow-md ml-2 -mt-1'
+              >
+                <BsPerson className='text-2xl text-blue-600' />
+              </motion.div>
             </div>
           </motion.div>
 
@@ -259,7 +277,7 @@ const About = () => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="mailto:your.email@example.com"
+                  href="mailto:mrakshatsharma15@gmail.com"
                   className='text-gray-800 hover:text-red-500 flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg transition-colors'
                 >
                   <CiMail className='text-xl' /> Email
