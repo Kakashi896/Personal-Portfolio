@@ -42,10 +42,11 @@ const Contact = () => {
         
         {/* Left: Form */}
         <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          onSubmit={handleSubmit}
+         name="contact"
+         method="POST"
+         netlify
+         data-netlify="true"
+         onSubmit={handleSubmit}
           className="bg-white rounded-2xl shadow-md p-6 sm:p-10"
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -118,16 +119,6 @@ const Contact = () => {
             <div className="flex items-center gap-3 mb-3">
               <CgMail className="text-2xl text-blue-600" />
               <span>mrakshatsharma15@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <MdOutlineFileDownload className="text-2xl text-blue-600" />
-              <a
-                href="/Shivam_Frontend.pdf"
-                download
-                className="text-blue-600 underline"
-              >
-                Download my CV
-              </a>
             </div>
           </div>
 

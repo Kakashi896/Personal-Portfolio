@@ -18,7 +18,7 @@ const Home = () => {
 
         <div className="flex flex-wrap gap-3 mt-4">
           <a
-            href="/Shivam_Resume.pdf"
+            href="/Shivam_Bhardwaj_Resume.pdf"
             download
             className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition text-sm"
           >

@@ -293,7 +293,7 @@ const About = () => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/Shivam_Resume.pdf" 
+                  href="/Shivam_Bhardwaj_Resume.pdf" 
                   download 
                   className='text-blue-600 hover:underline flex items-center gap-1 px-3 py-2 bg-blue-50 rounded-lg'
                 >
