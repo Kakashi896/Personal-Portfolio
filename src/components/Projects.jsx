@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import Newsly from '../assets/Newsly.png';
 import Arogyam from '../assets/Arogyam.png';
 import Notemints from '../assets/Notemints.png';
-import Portfolio from '../assets/Port.png';
+import Portfolio from '../assets/port.png';
 
 const projects = [
   {
